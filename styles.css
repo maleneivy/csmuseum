@@ -1,0 +1,42 @@
+body {
+    background-color: #F5F5F5;
+}
+header {
+    background-color: #4CC1FA;
+}
+.logo {
+    height:100px;
+    width: auto;
+}
+
+.search, .header-menus, .header-menus li {
+    display: inline-flex;
+}
+.search-bar {
+    border-radius: 9px;
+    height: 24px;
+}
+.explore-banner {
+    background-color: #3EFAD3;
+}
+h1 {
+    font-family: New Spirit, serif;
+    font-weight: 400;
+    font-style:normal;
+    font-variant: small-caps;
+    font-size: 36px;
+
+}
+h2{
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 27px;
+}
+
+p {
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
