@@ -39,16 +39,37 @@
     </header>
     <main>
         <section class="news-homepage-slide_container">
-            <div class="slide-image">
-                <img src="**" alt="woman technology" id="img-one">
+
+            <input type="radio" name="news-images" id="i1" checked>
+            <input type="radio" name="news-images" id="i2">
+            <input type="radio" name="news-images" id="i3">
+
+            <div class="slide-image" id="one">
+                <img src="img/female-astronaut-with-space-suit-outer-space.jpg" alt="woman technology">
+                <label for="i3" class="previous"></label>
+                <label for="i2" class="next"></label>
             </div>
-            <div class="slide-image">
-                <img src="**" alt="mammoth in a museum" id="img-two">
+
+            <div class="slide-image" id="two">
+                <img src="img/mammoth-night-in-the-museum.jpg" alt="mammoth in a museum">
+                <label for="i1" class="previous"></label>
+                <label for="i3" class="next"></label>
             </div>
-            <div class="slide-image">
-                <img src="**" alt="man doing a wind project" id="img-three">
+
+            <div class="slide-image" id="three">
+                <img src="img/man-doing-wind-project.jpg" alt="man doing a wind project">
+                <label for="i2" class="previous"></label>
+                <label for="i1" class="next"></label>
             </div>
+
+            <div class="nav-dots">
+                <label class="slide-dots" id="dot1" for="i1"></label>
+                <label class="slide-dots" id="dot2" for="i2"></label>
+                <label class="slide-dots" id="dot3" for="i3"></label>
+            </div>
+
         </section>
+
         <section class="homepage_containers">
             <div class="explore-banner">
                 <h1>explore</h1>
