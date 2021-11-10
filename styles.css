@@ -217,4 +217,16 @@ footer h4{
     height: 25px;
     transition: 0.5s;
 }
+.slide-image_text{
+    position: relative;
+    background-color: #ffffffc7;
+    padding: 20px;
+    max-width: 40%;
+    border-radius: 9px;
+    top:-70%;
+    left: 50%;
+}
+.slide-image_text h3{
+    font-variant: normal;
+}
 
