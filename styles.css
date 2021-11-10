@@ -78,6 +78,7 @@ header p {
 }
 .banner-boxes {
     margin: 30px auto;
+    max-width: 1600px;;
 }
 .banner-boxes, .visit-us_box-text{
     border: solid 1px #dadada;
@@ -300,4 +301,74 @@ footer h4{
     height: 600px;
     max-width: 1080;
     margin: 30px auto;
+}
+/*Tabmenu on get-involved.html*/
+.tabmenu{
+    background-color: #fff;
+    max-width: 1000px;
+    width: 100%;
+    margin: 150px auto;
+    border-radius: 9px;
+    padding: 10px;
+    border: solid 1px #dadada;
+    padding: 20px;
+}
+.tabmenu nav{
+    position: relative;
+    width:80%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+.tabmenu nav label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 27px;
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+#support:checked ~ nav label.support,
+#internship:checked ~ nav label.internship,
+#volunteer:checked ~ nav label.volunteer{
+    font-weight: bold;
+}
+input[type="radio"]{
+    display: none;
+}
+.tabmenu nav .slider{
+    position: absolute;
+    height: 100%;
+    width: 33%;
+    background: #FA8B64;
+    border-radius: 9px;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+#volunteer:checked ~ nav .slider{
+    left:33%;
+}
+#internship:checked ~ nav .slider{
+    left:66%;
+}
+section .tab-content{
+    display:none;
+}
+#support:checked ~ section .content-support{
+    display: block;
+}
+#volunteer:checked ~ section .content-volunteer{
+    display: block;
+}
+#internship:checked ~ section .content-internship{
+    display: block;
 }
