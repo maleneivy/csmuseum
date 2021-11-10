@@ -76,14 +76,19 @@ header p {
     margin:0 auto;
     grid-gap: 10px;
 }
+.visit-us-container{
+    display: grid;
+}
 .banner-boxes {
+    margin: 30px auto;
+}
+.banner-boxes, .visit-us_box-text{
     border: solid 1px #dadada;
     padding: 10px;
     border-radius: 9px;
     display: grid;
     grid-template-rows: repeat(4, 0.1fr);
     background-color: #fff;
-    margin: 30px auto;
 }
 .banner-boxes p, .banner-boxes h2{
     margin: 10px 0;
@@ -105,19 +110,13 @@ header p {
 .get-involved-banner{
     background-color: #FA8B64;
 }
-.explore-banner, .exhibition-banner, .get-involved-banner{
+.visit-us_banner{
+    background-color: #FACB32;
+}
+.explore-banner, .exhibition-banner, .get-involved-banner, .visit-us_banner{
     max-width: 1600px;
     margin:auto;
     padding-left: 10px;
-}
-/*explore page*/
-.explore-banner_inside-banner-box{
-    width: 100%;
-}
-.homepage_containers-explore{
-    grid-template-columns: repeat(2,1fr);
-    margin-top: 30px;
-    grid-gap: 30px;
 }
 
 h1 {
@@ -257,4 +256,13 @@ footer h4{
 .slide-image_text h3{
     font-variant: normal;
 }
-
+/*explore page*/
+.explore-banner_inside-banner-box{
+    width: 100%;
+}
+.homepage_containers-explore{
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+    grid-gap: 30px;
+}
+/*visit us page*/
