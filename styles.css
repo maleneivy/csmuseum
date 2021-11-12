@@ -115,6 +115,7 @@ header p {
     max-width: 1600px;
     margin:auto;
     padding-left: 10px;
+    border-radius: 9px;
 }
 
 h1 {
@@ -383,6 +384,7 @@ section .tab-content{
     flex-wrap: wrap;
     gap: 10px;
     border: solid 1px #dadada;
+    border-radius: 9px;
 }
 .contact-scheme input, .contact-scheme textarea, .contact-scheme select{
     font-family: mr-eaves-modern, sans-serif;
@@ -394,6 +396,7 @@ section .tab-content{
     padding: 5px 0 5px 10px;
     align-items: center;
     border: solid 1px #dadada;
+    border-radius: 9px;
 }
 #message{
     height: 200px;
@@ -471,10 +474,25 @@ section .tab-content{
     border-radius: 0 0 9px 9px;
     border: solid 1px #000;
 }
-/*responsive design*/
 
-/*Responsive timeline*/
-@media(max-width: 1460px){
+/*Responsive*/
+@media(max-width: 1500px){
+    /*The general*/
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 27px;
+    }
+    p, header li, h3, .tabmenu nav label,
+    .contact-scheme input, .contact-scheme select, 
+    .contact-scheme textarea{
+        font-size: 20px;
+    }
+    .cta, footer li, h4{
+        font-size: 15px;
+    }
+/*timeline*/
     .timeline-items::before{
         left:7px;
     }
@@ -492,4 +510,38 @@ section .tab-content{
     .timeline-item:nth-child(odd) .timeline-header{
         text-align: left;
     }
+/*homepage containers*/
+.homepage_containers{
+    grid-template-columns: repeat(2, 1fr);
+}
+/*slider image*/
+.slide-image_text{
+    top: -85%;  
+    padding: 10px;
+    left: 30%;
+    max-width: 60%
+}
+.slide-image_text .cta{
+    padding: 5px 20px;
+}
+.slide-image_text h2, .slide-image_text h3{
+    margin: 5px;
+}
+
+@media(max-width: 930px){
+/*The general*/
+h1{
+    font-size: 27px;
+}
+.homepage_containers{
+    grid-template-columns: repeat(1, 1fr);
+    width:90%
+}
+.explore-banner, .exhibition-banner, .get-involved-banner, .visit-us_banner{
+width: 90%;
+}
+.image_top-of-page{
+    height: 300px;
+}
+}
 }
