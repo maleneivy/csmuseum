@@ -5,7 +5,7 @@ body {
     height: 100vh;
 }
 main {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 header, footer {
@@ -405,3 +405,65 @@ section .tab-content{
 .contact-scheme .cta{
     float: right;
 }
+/*exhibition page with a timeline design*/
+.timeline-section {
+    max-width: 1600px;
+}
+.timeline-header{
+    font-size: 27px;
+    font-weight: 700;
+    font-family: mr-eaves-modern, sans-serif;
+    font-variant: small-caps;
+}
+.timeline-items{
+    max-width: 1600px;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.timeline-items::before{
+    content:"";
+    position: absolute;
+    width: 2px;
+    height: 60%;
+    background-color: #000000;
+    left: calc(50% - 1px)
+}
+.timeline-item {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child {
+   margin-bottom: 10px;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+}
+.timeline-item:nth-child(odd) .timeline-header{
+    text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+    height: 20px;
+    width: 20px;
+    background-color: #8797FA;
+    border-radius: 50%;
+    border: solid 3px #000;
+    position: absolute;
+    left: calc(50% - 13px);
+
+}
+.timeline-content {
+    background-color: #fff;
+    padding: 20px; 
+    border-radius: 9px;
+    border: solid 1px #000;
+}
+/*responsive design*/
+
+/*Responsive timeline*/
+@media
