@@ -492,6 +492,9 @@ section .tab-content{
     .cta, footer li, h4{
         font-size: 15px;
     }
+    .image_top-of-page{
+        height: 400px;
+    }
 /*timeline*/
     .timeline-items::before{
         left:7px;
