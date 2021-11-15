@@ -478,7 +478,7 @@ section .tab-content{
     background-color: #fff;
     padding: 20px; 
     border-radius: 0 0 9px 9px;
-    border: solid 1px #000;
+    border: solid 1px #dadada;
 }
 
 /*Responsive*/
@@ -570,15 +570,31 @@ section .tab-content{
 .slide-image_text h2, .slide-image_text h3{
     margin: 5px;
 }
+/*visit us medium screens*/
+.mapouter{
+    max-width: 800px;
+}
+.visit-us_box-text{
+    grid-template-rows: repeat(1, 1fr);
+}
 
 @media(max-width: 930px){
 /*The general*/
+.logo-section {
+    font-size: 15px;;
+}
 h1{
     font-size: 27px;
 }
 .homepage_containers{
     grid-template-columns: repeat(1, 1fr);
     width:90%
+}
+.banner-boxes img {
+    height: 200px;
+}
+.banner-boxes{
+    margin: 10px;
 }
 .explore-banner, .exhibition-banner, .get-involved-banner, .visit-us_banner{
 width: 90%;
@@ -596,6 +612,54 @@ nav a{
 /*news container on homepage*/
 .news-homepage-mobile-screen{
     display: block;
+}
+/*visit us mobile screen*/
+.mapouter{
+    max-width: 500px;
+    height:30%;
+}
+@media (max-width: 600px){
+    .mapouter{
+        max-width: 400px;
+        height: 10%;
+    }
+    .prices-box, .opening-box, .food-drink-box, .accessibility-box, .location-box {
+        flex: 1 0 300px;
+    }
+    .visit-us_box-text{
+        max-width: 500px;
+    }
+    p, header li, h3, .tabmenu nav label,
+    .contact-scheme input, .contact-scheme select, 
+    .contact-scheme textarea{
+        font-size: 15px;
+    }
+    .tabmenu{
+        margin: 50px auto;
+        width: 80%;
+    }
+    .timeline-header{
+        font-size: 27px;
+    }
+    h2{
+        font-size: 20px;;
+    }
+    .logo-text {
+        display: none;
+    }
+    main{
+        width:90%;
+    }
+    @media (max-width: 500px){
+        .mapouter{
+            max-width: 300px;
+        }
+    }
+    @media (max-width: 400px){
+        .mapouter{
+            max-width: 200px;
+        }
+    }
 }
 }
 }
