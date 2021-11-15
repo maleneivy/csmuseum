@@ -437,7 +437,7 @@ section .tab-content{
     content:"";
     position: absolute;
     width: 3px;
-    height: 120%;
+    height: 235%;
     background-color: #000000;
     left: calc(50% - 1px);
 }
@@ -504,7 +504,7 @@ section .tab-content{
     }
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even){
-        padding-left: 40px;
+        padding-left: 0px;
         text-align:left;
     }
     .timeline-dot{
