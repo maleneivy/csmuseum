@@ -19,6 +19,9 @@ header{
     height:100px;
     width: auto;
 }
+#hamburger-menu, .hamburger-label{
+    display: none;
+}
 .logo-section, .header-menus {
     display: flex;
     list-style-type: none;
@@ -190,6 +193,9 @@ footer h4{
     object-fit: cover;
 }
 /* News slider in homepage */
+.news-homepage-mobile-screen{
+    display: none;
+}
 .news-homepage-slide_container {
     margin: 0 auto;
     margin-top: 30px;
@@ -495,7 +501,41 @@ section .tab-content{
     .image_top-of-page{
         height: 400px;
     }
-/*timeline*/
+    /*hamburger menu*/
+    #hamburger-menu, .hamburger-label{
+        display: block;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 2;
+        margin: auto;
+    }
+    header nav, #hamburger-menu{
+        display: none;
+    }
+    #hamburger-menu:checked ~ nav {
+        display: grid;
+    }
+    .hamburger-label{
+        font-size: 36px;
+        text-align: end;
+        padding-right: 60px;
+        grid-column: 2;
+    
+    }
+ .header-menus, nav a{
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+        font-size: 27px;
+        grid-column: 5;
+    }
+    .header-menus a:hover{
+        max-width: 100%;
+    }
+
+    /*timeline*/
     .timeline-items::before{
         left:7px;
     }
@@ -545,6 +585,17 @@ width: 90%;
 }
 .image_top-of-page{
     height: 300px;
+}
+/*hamburger menu small screens*/
+nav a{
+ font-size: 20px;
+}
+.news-homepage-slide_container{
+    display: none;
+}
+/*news container on homepage*/
+.news-homepage-mobile-screen{
+    display: block;
 }
 }
 }
