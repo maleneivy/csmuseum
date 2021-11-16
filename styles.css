@@ -19,6 +19,9 @@ header{
     height:100px;
     width: auto;
 }
+img {
+    border-radius: 9px;
+}
 #hamburger-menu, .hamburger-label{
     display: none;
 }
@@ -645,7 +648,7 @@ nav a{
     .visit-us_box-text{
         max-width: 500px;
     }
-    p, header li, h3, .tabmenu nav label,
+    p, header li, .tabmenu nav label,
     .contact-scheme input, .contact-scheme select, 
     .contact-scheme textarea{
         font-size: 15px;
@@ -676,15 +679,15 @@ nav a{
         .footer-menus ul{
             padding-bottom: 10px;
         }
+        .footer-menus h3, footer h4{
+            display: none;
+        }
 
 
     }
     @media (max-width: 400px){
         .mapouter{
             max-width: 200px;
-        }
-        .footer-menus h3, footer h4{
-            display: none;
         }
     }
 
