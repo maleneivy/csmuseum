@@ -165,6 +165,13 @@ h4, footer li {
 .footer-menus li {
     list-style: none;
 }
+.footer-menus ul{
+    padding-bottom: 80px;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
 footer h4{
     margin:auto;
 }
@@ -495,11 +502,14 @@ section .tab-content{
     .contact-scheme textarea{
         font-size: 20px;
     }
-    .cta, footer li, h4{
+    .cta {
         font-size: 15px;
     }
     .image_top-of-page{
         height: 400px;
+    }
+    .footer-menus{
+        grid-template-columns: repeat(3, 1fr);
     }
     /*hamburger menu*/
     #hamburger-menu, .hamburger-label{
@@ -602,6 +612,9 @@ width: 90%;
 .image_top-of-page{
     height: 300px;
 }
+.footer-menus{
+    grid-template-columns: repeat(2, 1fr);
+}
 /*hamburger menu small screens*/
 nav a{
  font-size: 20px;
@@ -642,7 +655,7 @@ nav a{
         font-size: 27px;
     }
     h2{
-        font-size: 20px;;
+        font-size: 20px;
     }
     .logo-text {
         display: none;
@@ -654,12 +667,23 @@ nav a{
         .mapouter{
             max-width: 300px;
         }
+        .footer-menus{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .footer-menus ul{
+            padding-bottom: 10px;
+        }
+
+
     }
     @media (max-width: 400px){
         .mapouter{
             max-width: 200px;
         }
-    }
+        .footer-menus h3, footer h4{
+            display: none;
+        }
+
 }
 }
 }
