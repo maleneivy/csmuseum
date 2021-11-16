@@ -45,6 +45,10 @@ img {
     background-color: #c7ecff;
     border-radius: 9px;
 }
+.current-footer{
+    font-weight: 700;
+    text-decoration: underline;
+}
 .header-menus{
     margin-right: 20px;
 }
@@ -391,6 +395,12 @@ section .tab-content{
 }
 #internship:checked ~ section .content-internship{
     display: block;
+}
+.tabmenu label:hover{
+    background: #f6c6b5;
+    border-radius: 9px;
+    display: block;
+    transition: 0.2s;
 }
 /*contact scheme*/
 .contact-scheme{
