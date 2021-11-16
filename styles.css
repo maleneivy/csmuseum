@@ -102,6 +102,9 @@ header p {
 .banner-boxes .cta{
     float:right;
 }
+.banner-boxes_news img {
+    height: 800px;
+}
 .explore-banner, .explore-banner_inside-banner-box {
     background-color: #3EFAD3;
 }
@@ -683,6 +686,7 @@ nav a{
         .footer-menus h3, footer h4{
             display: none;
         }
+    }
 
 }
 }
