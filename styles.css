@@ -505,7 +505,7 @@ section .tab-content{
 }
 
 /*Responsive*/
-@media(max-width: 1500px){
+@media(max-width: 1400px){
     /*The general*/
     h1{
         font-size: 36px;
