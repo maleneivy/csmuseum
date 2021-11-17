@@ -466,7 +466,7 @@ section .tab-content{
     content:"";
     position: absolute;
     width: 3px;
-    height: 380%;
+    height: 390%;
     background-color: #000000;
     left: calc(50% - 1px);
 }
@@ -505,12 +505,6 @@ section .tab-content{
 }
 
 /*Responsive*/
-@media(min-width: 1400px){
-    .timeline-items::before{
-        height: 240%;
-    }
-}
-
 @media(max-width: 1400px){
     /*The general*/
     h1{
