@@ -466,7 +466,7 @@ section .tab-content{
     content:"";
     position: absolute;
     width: 3px;
-    height: 235%;
+    height: 250vh;
     background-color: #000000;
     left: calc(50% - 1px);
 }
