@@ -533,7 +533,7 @@ h1{
 }
 .homepage_containers{
     grid-template-columns: repeat(1, 1fr);
-    width:90%
+    
 }
 .banner-boxes img {
     height: 200px;
