@@ -567,6 +567,9 @@ nav a{
     height:30%;
 }
 @media (max-width: 600px){
+    .search-bar i{
+        display: none;
+    }
     .mapouter{
         max-width: 400px;
         height: 10%;
