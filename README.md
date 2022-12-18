@@ -31,7 +31,7 @@ I created user personas and when I had a better picture of target audience, I us
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/maleneivy/squareeyesproject.git
+git clone https://github.com/maleneivy/csmuseum.git
 ```
 
 2. Install the dependencies:
