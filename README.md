@@ -16,10 +16,6 @@ The website should be responsive and be easy to use on a variety of devices.
 I created a work schedule with Trello and started out with the UX-design. 
 I created user personas and when I had a better picture of target audience, I used the software Adobe XD to create the prototype. 
 
-## Built with
-
-- 
-
 ## Visit the site
 
 - [Community Science Museum](https://gallant-visvesvaraya-6a0d3c.netlify.app/)
